@@ -1,0 +1,144 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.react-chatbot-kit-chat-inner-container {
+  flex: 1;
+  overflow-y: auto; /* Add vertical scrollbar if needed */
+}
+.react-chatbot-kit-chat-container {
+  position: fixed;
+  top: 10%;
+  bottom: 0;
+  left: 30%;
+  transform: translateX(-50%);
+  width: 100px; /* Set the desired width for the chatbot */
+  background-color: white; /* Adjust the background color as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.product-list{
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+.product-image{
+  width:250px ;
+  height: 300px;
+  padding: 10px;
+  border-radius: 10px;
+display: flex;
+flex-direction: column;
+margin: 10px;
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.product-image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.product-image h2{
+  margin: 10px 5px;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+}
+
+.modal { 
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.modal-content img{
+  margin-right: 20px;
+}
+
+.close {
+  color: #aaaaaa;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.add-to-cart-button{ 
+  border: none;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+    color: white;
+    background: rgb(120, 196, 196);
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.recommend{
+  width: 100%;
+  border: solid 1px ;
+}
