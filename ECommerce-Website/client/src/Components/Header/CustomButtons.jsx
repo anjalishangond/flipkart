@@ -86,9 +86,15 @@ const CustomButtons = () => {
                     <ShoppingCart />
                 </Badge>
                 <Typography style={{ marginLeft: 10 }}>Cart</Typography>
-                <Typography className='ChatBotStyle'>
+                {/* <Typography className='ChatBotStyle'>
                       <CreatedChatBot></CreatedChatBot>
-                    </Typography> 
+                </Typography>  */}
+                
+                <Typography style={{ marginLeft: 10 }}>
+                <Link to='/genai'>
+                    Hello
+                </Link>
+                </Typography>
 
             </Container>
             {/* <Chatbot></Chatbot> */}
