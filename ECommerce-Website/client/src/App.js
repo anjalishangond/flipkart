@@ -11,6 +11,7 @@ import TemplateProvider from './templates/TemplateProvider';
 import ContextProvider from './context/ContextProvider';
 import Cart from './Components/Cart/Cart'; 
 import ProductList from './Components/ProductList'; 
+import GenAI from './Components/GenAI';
 
 function App() {
   return (
@@ -23,10 +24,11 @@ function App() {
               <Route path= '/' element={<Home />} />
               <Route path= '/cart' element={<Cart />} />
               <Route path= '/product/:id' element={<DetailView />} />
+              <Route path='/genai' element={<GenAI />}></Route>
             </Routes>
           </Box>
+        <ProductList></ProductList>
         </BrowserRouter> 
-      <ProductList></ProductList>
       </ContextProvider>
     </TemplateProvider>
   );
