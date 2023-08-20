@@ -90,11 +90,7 @@ const CustomButtons = () => {
                       <CreatedChatBot></CreatedChatBot>
                 </Typography>  */}
                 
-                <Typography style={{ marginLeft: 10 }}>
-                <Link to='/genai'>
-                    Hello
-                </Link>
-                </Typography>
+
 
             </Container>
             {/* <Chatbot></Chatbot> */}

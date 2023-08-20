@@ -27,8 +27,8 @@ function App() {
               <Route path='/genai' element={<GenAI />}></Route>
             </Routes>
           </Box>
+        <ProductList></ProductList>
         </BrowserRouter> 
-      <ProductList></ProductList>
       </ContextProvider>
     </TemplateProvider>
   );

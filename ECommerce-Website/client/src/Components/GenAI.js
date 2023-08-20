@@ -1,10 +1,16 @@
 import React from 'react'
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom'; // Add this import
 
 const GenAI = () => {
 
     const [show, setShow] = useState('');
+    const location = useLocation(); // Use the useLocation hook
     
+    const queryParams = new URLSearchParams(location.search);
+    const imageId = queryParams.get('imageId'); // Get the imageId from the URL parameter
+
+
     const itemsShow = (e) => {
         e.preventDefault();
         if (show === e.target.name) setShow('')
@@ -16,6 +22,7 @@ const GenAI = () => {
             <div className='col-span-1 mt-12 mx-6 rounded'>
                 <div className='bg-blue-100'>
                     <h1 className='p-2'>Hello</h1>
+                    <h1 className='p-2'>Image ID: {imageId} </h1>
                 </div>
                 <h1 className='m-2'>Try:</h1>
                 <br></br>
